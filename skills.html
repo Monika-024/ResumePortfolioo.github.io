@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: black;
+            color:white;
+            font-family: "Poppins", sans-serif;
+        }
+        h1{
+            text-align: center;
+            margin-top: 40px;
+            font-size: 80px;
+        }
+        .skills-area{
+            display: flex;
+            flex-direction: column;
+            padding: 0 20%;
+        }
+        .skill{
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .skill-title{
+            font-size: 40px;
+            margin-bottom: 10px;
+
+        }
+        .skill-bar{
+            width: 100%;
+            background: rgba(255,255,255,0.6);
+            height: 40px;
+            z-index:-1;
+            border-radius:100px;
+            position: absolute;
+       }
+       .skill-fill{
+        background: palevioletred;
+        height: 40px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
+        overflow: hidden;
+       }
+       .skill-percent{
+        font-size:30px;
+       }
+       .JSE{
+        animation:JSE 2s;
+        width:90%
+       }
+       .MySql{
+        animation:MySQL 2s;
+        width:95%
+       }
+       .HTML{
+        animation:html 2s;
+        width:90%
+       }
+       .CSS{
+        animation:CSS 2s;
+        width:80%
+       }
+       .Javascript{
+        animation:JSE 2s;
+        width:50%
+       }
+       .JEE{
+        animation:Javascript 2s;
+        width:70%
+       }
+
+       @keyframes JSE{
+        from{
+            width:0;        
+        }
+       to{
+        width:90%;
+       }
+    }
+    @keyframes MySQL{
+        from{
+            width:0;        
+        }
+       to{
+        width:95%;
+       }
+    }
+    @keyframes HTML{
+        from{
+            width:0;        
+        }
+       to{
+        width:90%;
+       }
+    }
+    @keyframes CSS{
+        from{
+            width:0;        
+        }
+       to{
+        width:80%;
+       }
+    }
+    @keyframes Javascript{
+        from{
+            width:0;        
+        }
+       to{
+        width:50%;
+       }
+    }
+    @keyframes JEE{
+        from{
+            width:0;        
+        }
+       to{
+        width:70%;
+       }
+    }
+    @media only screen and (max-width:750px){
+        .skills-area{
+            padding: 0 5%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>My Skills</h1>
+    <div class="skill-area">
+        <div class="skill">
+            <div class="skill-title">JSE</div>
+            <div class="skill-bar"></div>
+            <div class="JSE skill-fill">90%</div>
+            <span class="skill-percent"></span>
+        </div>
+    </div>
+
+        <div class="skill">
+        <div class="skill-title">MySQL</div>
+        <div class="skill-bar"></div>
+        <div class="MySQL skill-fill">95%</div>
+        <span class="skill-percent"></span>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skill-title">HTML</div>
+    <div class="skill-bar"></div>
+    <div class="HTML skill-fill">90%</div>
+    <span class="skill-percent"></span>
+</div>
+</div>
+
+<div class="skill">
+    <div class="skill-title">CSS</div>
+    <div class="skill-bar"></div>
+    <div class="CSS skill-fill">80%</div>
+    <span class="skill-percent"></span>
+</div>
+</div>
+
+<div class="skill">
+    <div class="skill-title">Javascript</div>
+    <div class="skill-bar"></div>
+    <div class="Javascript skill-fill">50%</div>
+    <span class="skill-percent"></span>
+</div>
+</div>
+
+<div class="skill">
+    <div class="skill-title">JEE</div>
+    <div class="skill-bar"></div>
+    <div class="JEE skill-fill">70%</div>
+    <span class="skill-percent"></span>
+</div>
+</div>
+
+</body>
+</html>
